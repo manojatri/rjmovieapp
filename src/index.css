@@ -1,0 +1,50 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+img{width:100%; max-width: 100%; display: block; border:none}
+a{text-decoration: none;}
+html{font-size:10px}
+body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:1.4rem; line-height:2.5rem; background-color: antiquewhite;}
+h1, h2{font-size:3rem; color:rgb(0, 128, 255); line-height:3rem; margin-bottom:3rem}
+.searchContainer{margin:2rem 0 3rem; padding:1rem}
+.searchContainer h3{font-size:2rem; margin-bottom:1rem; text-align: center;}
+.searchBox{background-color: aqua; border:1px solid rgb(2, 195, 195); padding:2rem;}
+.searchInput{border:1px solid wheat; background-color: wheat; padding:1rem; width:100%}
+
+.movieContainer{width:100%; display:grid; padding:2rem; grid-gap:2rem;}
+.movieBox{background-color: azure; border:1px solid #685d49; padding:2rem; border-radius:1rem;}
+.movieBox h3{font-size:2rem; color:rebeccapurple; text-align: center; margin-bottom:1rem;}
+
+.loading{font-size:2rem;color:coral;text-align: center;margin:1rem 0}
+.showMsg{font-size:1.6rem;color:rgb(227, 64, 4);text-align: center;margin:1rem 0}
+
+.loadingContainer{font-size:4rem; height:100vh; display:grid; place-items: center; color:blueviolet; background-color:aquamarine;}
+
+.movieCardContainer{display:grid; place-items:center; background-color:aquamarine; padding:5rem;}
+
+.movieCard{display:grid;grid-gap:2rem;grid-template-columns:1fr; background-color:azure; border:1px solid #685d49; padding:2rem; border-radius:1rem;}
+
+.movieInfo h2{font-size:1.6rem; font-weight:700; text-align: center;margin-bottom:1rem}
+.movieInfo p{margin-bottom:1rem; font-size:1.2rem}
+.movieInfo span{ font-size:1.4rem; font-weight:700;color:green}
+
+span.BackBtn { font-size:1.6rem; background-color: blue; border-radius: 0.5rem; padding:1rem 2rem; display:inline-flex; color:aliceblue}
+
+@media only screen and (min-width:600px){
+    .movieContainer{grid-template-columns:1fr 1fr;}
+}
+
+@media only screen and (min-width:1000px){
+    .searchContainer{width:50%; margin:2rem auto 3rem}
+    .movieContainer{grid-template-columns:1fr 1fr 1fr;}
+
+    .movieCardContainer{height:100vh; padding:0}
+    .movieCard{grid-template-columns:1fr 2fr; width:70rem}   
+    .movieInfo h2{text-align:left; font-size:2rem}
+    .movieImg img{height:30rem; border-radius:0.5rem}
+}
+
+@media only screen and (min-width:1280px){
+    .container{width:1200px; max-width:1200px; margin:0 auto;}
+    .searchContainer{width:50%; margin:2rem auto 3rem}
+    .movieContainer{grid-template-columns:1fr 1fr 1fr;}
+    .movieInfo p{font-size:1.4rem}
+}
